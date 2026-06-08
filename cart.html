@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page - GreenLand</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font Awesome -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="js/cart.js" defer></script>
+  </head>
+  <body>
+    <!-- Cart page -->
+
+    <section class="cart-page">
+      <!-- Left -->
+
+      <div class="cart-left">
+        <div class="cart-left-head">
+          <a href="index.html" class="back-link">
+            <i class="fa-solid fa-chevron-left"></i>
+            <span> Shopping Continue</span>
+          </a>
+
+          <hr class="divider" />
+
+          <h2 class="cart-left-title">Shopping cart</h2>
+          <small class="cart-subtitle">
+            You have <span id="cartCount">0</span> items in your cart</small
+          >
+        </div>
+
+        <div class="shopping-cart" id="cartList"></div>
+      </div>
+
+      <!-- Right -->
+
+      <div class="cart-right">
+        <h3>Card Details</h3>
+
+        <!-- Payment Form -->
+
+        <form class="payment-form" id="paymentForm">
+          <div class="card-type-row">
+            <span class="label">Card type</span>
+          </div>
+          <div class="card-types">
+            <img src="img/mastercard.png" alt="Mastercard" />
+            <img src="img/visa.png" alt="Visa" />
+            <img src="img/rupay.png" alt="Rupay" />
+            <button type="button" class="see-all">See all</button>
+          </div>
+
+          <label for="nameOnCard">Name on card</label>
+          <input id="nameOnCard" type="text" name="name" placeholder="name" />
+          <small class="error-text" id="nameError"
+            >Name should be at least 2 letters.</small
+          >
+
+          <label for="cardNumber">Card Number</label>
+          <input
+            id="cardNumber"
+            type="text"
+            name="cardNumber"
+            placeholder="1111 2222 3333 4444"
+          />
+          <small class="error-text" id="numberError"
+            >Enter a valid card number.</small
+          >
+
+          <div class="form-row">
+            <div>
+              <label for="exp">Expiration date</label>
+              <input id="exp" type="text" name="exp" placeholder="MM/YY" />
+
+              <small class="error-text" id="expError"
+                >Enter a valid future date.</small
+              >
+            </div>
+            <div>
+              <label for="cvv">CVV</label>
+              <input id="cvv" type="text" name="cvv" placeholder="123" />
+              <small class="error-text" id="cvvError">3–4 digits.</small>
+            </div>
+          </div>
+
+          <div class="cart-totals">
+            <p>Subtotal: <span id="subtotal">$0</span></p>
+            <p>Shipping: <span id="shipping">$0</span></p>
+            <p>
+              <strong>Total (Tax incl.):</strong> <span id="total">$0</span>
+            </p>
+          </div>
+
+          <div class="checkout-row">
+            <span class="total-badge" id="footerTotal">$0</span>
+            <button type="submit" class="checkout-btn">
+              Checkout <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Modals -->
+
+    <div id="successModal" class="modal">
+      <div class="modal-content">
+        <p>Order has been paid successfully</p>
+        <span class="checkmark"><i class="fa-solid fa-check"></i></span>
+      </div>
+    </div>
+
+    <div id="errorModal" class="modal">
+      <div class="modal-content error">
+        <p>Checkout cannot be completed because the cart is empty</p>
+        <span class="checkmark"><i class="fa-solid fa-x"></i></span>
+      </div>
+    </div>
+  </body>
+</html>

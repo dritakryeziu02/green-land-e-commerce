@@ -1,0 +1,14 @@
+:root {
+  --primary-color: #4a9c80;
+  --white: #ffffff;
+  --dark-color: #000000;
+  --light-color: #f0f0f0;
+  --gray-color: #666666;
+  --green-color: #218c53;
+  --input-color: #66a891;
+  --card-color: #d9d9d933;
+  --error-color: #e10e0e;
+
+  --chelsea-font: "Chelsea Market", cursive;
+  --poppins-font: "Poppins", sans-serif;
+}
