@@ -19,6 +19,10 @@ A responsive e-commerce website built with **HTML, CSS, and JavaScript**. The ap
 - DummyJSON API
 - Local Storage
 
+## 📸 Screenshot
+
+![Green Land E-Commerce](greenland-e-commerce.png)
+
 ## 👩‍💻 Author
 
 **Drita Kryeziu**
