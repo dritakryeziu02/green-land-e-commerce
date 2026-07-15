@@ -21,7 +21,7 @@ A responsive e-commerce website built with **HTML, CSS, and JavaScript**. The ap
 
 ## 📸 Screenshot
 
-![Weather App](./screenshots/green-land-e-commerce.png)
+![Green Land E-Commerce](./screenshots/green-land-e-commerce.png)
 
 ## 👩‍💻 Author
 
