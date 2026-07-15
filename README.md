@@ -21,7 +21,8 @@ A responsive e-commerce website built with **HTML, CSS, and JavaScript**. The ap
 
 ## 📸 Screenshot
 
-![Green Land E-Commerce](./screenshots/green-land-e-commerce.png)
+![Green Land E-Commerce](./screenshots/greenland-e-commerce.png)
+
 ## 👩‍💻 Author
 
 **Drita Kryeziu**
